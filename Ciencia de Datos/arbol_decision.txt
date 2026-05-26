@@ -1,0 +1,16 @@
+from sklearn import tree
+
+#decision tree
+#(estatura, peso, talle de calzado)
+
+X= [[166, 58, 41], [162, 50, 38]]
+
+Y= ['male', 'female']
+
+clf= tree.DecisionTreeClassifier()
+clf.fit(X,Y)
+
+prediccion = clf.predict([[172, 61, 42]])
+
+print(prediccion)
+
